@@ -1,7 +1,7 @@
 {
   "fetchMembers": {
     "title": "Fetch class members",
-    "description": "If set to true, you can examine class methods by classname e.g. ArrayList.add. Warning! May freeze editor for a while on a large project.",
+    "description": "If set to true, you can examine class methods by classname e.g. ArrayList.add. Recommended only for small projects at the moment.",
     "type": "boolean",
     "default": false,
     "order": 0
