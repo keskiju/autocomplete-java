@@ -1,0 +1,9 @@
+{
+  "fetchMembers": {
+    "title": "Fetch class members",
+    "description": "If set to true, you can examine class methods by classname e.g. ArrayList.add. Warning! May freeze editor for a while on a large project.",
+    "type": "boolean",
+    "default": false,
+    "order": 0
+  }
+}
