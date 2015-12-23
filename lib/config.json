@@ -1,7 +1,7 @@
 {
-  "fetchMembers": {
-    "title": "Fetch class members",
-    "description": "If set to true, you can examine class methods by classname e.g. ArrayList.add. Recommended only for small projects at the moment.",
+  "loadClassMembers": {
+    "title": "Load class members",
+    "description": "If enabled, you can examine class methods and other members e.g. 'ArrayList.contains'. Current implementation is unoptimized. Therefore the feature is recommended only for small projects at the moment.",
     "type": "boolean",
     "default": false,
     "order": 0
