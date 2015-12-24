@@ -10,7 +10,7 @@ Configure classpath via a .classpath file that is placed at the root directory o
 
     ./src:./classes:./lib/*
 
-Class descriptions are loaded in the order specified in the .classpath file. If you are using the load class members feature, I recommend you to put the most important paths in the classpath first. Current implementation is unoptimized and class loading might take some time. Implementation does not yet observe file changes, but you can refresh class descriptions manually using the refresh command from menu.
+Class descriptions are loaded in the order specified in the .classpath file. If you are using the 'load class members' feature, I recommend you to put the most important paths in the classpath first, because current implementation is still unoptimized. Implementation does not yet observe file changes, but you can refresh class descriptions manually using the refresh command from menu.
 
 TIP: Use linter-javac package to compile your classes on save.
 
