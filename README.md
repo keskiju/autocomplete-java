@@ -22,6 +22,7 @@ Tested on OS X. Probably works ok on some Linux distributions also. Does not sup
 
 TODO:
 * Trigger refresh on add/change/move/delete of a class or jar file
+* Screenshot
 * Unit tests
 * Organize imports
 * Intelligent sorting of suggestions
