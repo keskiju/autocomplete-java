@@ -5,5 +5,19 @@
     "type": "boolean",
     "default": false,
     "order": 0
+  },
+  "inclusionPriority": {
+    "title": "Inclusion priority",
+    "description": "Inclusion priority in relation to other autocomplete-plus providers",
+    "type": "integer",
+    "default": 20,
+    "order": 1
+  },
+  "excludeLowerPriority": {
+    "title": "Exclude lower priority providers",
+    "description": "Whether to exclude lower priority providers",
+    "type": "boolean",
+    "default": true,
+    "order": 2
   }
 }

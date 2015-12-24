@@ -2,7 +2,7 @@
   "name": "autocomplete-java",
   "main": "./lib/main",
   "version": "0.2.0",
-  "description": "Autocomplete-plus provider for Java. Supports also auto import.",
+  "description": "Autocomplete-plus provider with auto import support for Java",
   "repository": "https://github.com/keskiju/autocomplete-java",
   "license": "MIT",
   "keywords": [
@@ -17,6 +17,9 @@
   "activationCommands": {
     "atom-workspace": "autocomplete-java:refresh"
   },
+  "activationHooks": [
+    "language-java:grammar-used"
+  ],
   "providedServices": {
     "autocomplete.provider": {
       "versions": {
