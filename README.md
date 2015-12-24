@@ -10,13 +10,15 @@ Configure classpath via a .classpath file that is placed at the root directory o
 
     ./src:./classes:./lib/*
 
-Class descriptions are loaded in the order specified in the .classpath file. If you are using the 'load class members' feature, I recommend you to put the most important paths in the classpath first, because current implementation is still unoptimized. Implementation does not yet observe file changes, but you can refresh class descriptions manually using the refresh command from menu.
+Implementation does not observe file changes yet, but you can refresh class descriptions manually using refresh command.
+
+If you are using the 'load class members' feature, I recommend you to put the most important paths in the classpath first, because current implementation is still unoptimized. Class descriptions are loaded in the order specified in the .classpath file.
 
 TIP: Use linter-javac package to compile your classes on save.
 
 ## Status
 
-NOTE: Tested on OS X. Probably works ok on some Linux distributions also. Does not support Windows yet.
+Tested on OS X. Probably works ok on some Linux distributions also. Does not support Windows yet.
 
 TODO:
 * Trigger refresh on add/change/move/delete of a class or jar file
