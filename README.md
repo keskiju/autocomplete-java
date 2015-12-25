@@ -18,21 +18,23 @@ TIP: Use linter-javac package to compile your classes on save.
 
 * Autocomplete class names
 * Auto import classes
+* Organize imports automatically on save (TODO)
 * Examine methods and variables of a class and use them as snippets
 * Intelligent sorting of suggestions
-* Refresh class description automatically on save (if linter-javac enabled)
-* Refresh all class descriptions manually with refresh command
+* Refresh class descriptions automatically on save (if linter-javac enabled)
+* Refresh all class descriptions manually with the refresh command
 
 ## Status
 
 Tested on OS X. Probably works ok on some Linux distributions also. Does not support Windows yet.
 
 TODO:
-* Organize imports on save
+* Organize imports automatically on save
+* Clean old class members on refresh
 * Screenshot
 * Unit tests
 * Testing on Linux
 * Support for Windows
-* Fuzzy search
 * Optimize 'load class members'
+* Fuzzy search
 * Determine variable type
