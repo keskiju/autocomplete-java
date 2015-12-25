@@ -4,8 +4,9 @@ Autocomplete-plus provider for Java. Features:
 
 * Complete package and class names
 * Import classes
-* Organize imports (TODO)
+* Organize imports
 * Examine public methods and variables of a class and use them as snippets
+* Crude determination of type (TODO)
 * Intelligent suggestions (remembers previous selections)
 * Refresh class description automatically on save (after compile)
 * Refresh all class descriptions manually with the refresh command
@@ -27,8 +28,7 @@ NOTE: There should be only one package that compiles classes, and other plugins 
 Tested on OS X. Probably works ok on some Linux distributions also. Does not support Windows yet.
 
 TODO:
-* Organize imports
-* Simple hack: determine variable and method return type
+* Crude determination of variable and method return type
 * Screenshot
 * Support for Windows
 * Testing on Linux
