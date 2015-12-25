@@ -18,7 +18,7 @@ Configure classpath via a .classpath file that is placed at the root directory o
 
     ./src:./classes:./lib/*
 
-You can also alter autocomplete behavior with settings.
+Alter autocomplete behavior with settings.
 
 NOTE: There should be only one package that compiles classes, and other plugins should rely on that. Therefore this package does not compile classes from source. Use linter-javac or some other package/tool for compiling. Preferably all classes should be compiled first on project load, and then each class separately on save.
 
@@ -27,14 +27,14 @@ NOTE: There should be only one package that compiles classes, and other plugins 
 Tested on OS X. Probably works ok on some Linux distributions also. Does not support Windows yet.
 
 TODO:
-* Organize imports automatically on save
+* Organize imports
 * Screenshot
-* Unit tests
 * Support for Windows
 * Testing on Linux
+* Unit tests
 * Optimize 'load class members'
 * Clean old class members on refresh
 * Support for multiple root folders
 * Support for symlinks
 * Fuzzy search
-* Determine variable type
+* More intelligent determination of type (currently just a simple hack)
