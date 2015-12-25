@@ -1,6 +1,6 @@
-# autocomplete-java for Atom
+# autocomplete-java
 
-Autocomplete-plus provider with auto import support for Java.
+Autocomplete-plus provider for Java.
 
 ![Screenshot](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
 
@@ -10,23 +10,29 @@ Configure classpath via a .classpath file that is placed at the root directory o
 
     ./src:./classes:./lib/*
 
-Implementation does not observe file changes yet, but you can refresh class descriptions manually using refresh command.
-
 If you are using the 'load class members' feature, I recommend you to put the most important paths in the classpath first, because current implementation is still unoptimized. Class descriptions are loaded in the order specified in the .classpath file.
 
 TIP: Use linter-javac package to compile your classes on save.
+
+## Features
+
+* Autocomplete class names
+* Auto import classes
+* Examine methods and variables of a class and use them as snippets
+* Intelligent sorting of suggestions
+* Refresh class description automatically on save (if linter-javac enabled)
+* Refresh all class descriptions manually with refresh command
 
 ## Status
 
 Tested on OS X. Probably works ok on some Linux distributions also. Does not support Windows yet.
 
 TODO:
-* Trigger refresh on add/change/move/delete of a class or jar file
+* Organize imports on save
 * Screenshot
 * Unit tests
-* Organize imports
-* Intelligent sorting of suggestions
+* Testing on Linux
+* Support for Windows
 * Fuzzy search
 * Optimize 'load class members'
 * Determine variable type
-* Support for Windows
