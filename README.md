@@ -35,5 +35,6 @@ TODO:
 * Support for Windows
 * Optimize 'load class members'
 * Support for multiple root folders
+* Support for symlinks
 * Fuzzy search
 * Determine variable type
