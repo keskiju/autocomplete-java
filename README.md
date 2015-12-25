@@ -28,13 +28,16 @@ Tested on OS X. Probably works ok on some Linux distributions also. Does not sup
 
 TODO:
 * Organize imports
+* Simple hack: determine variable and method return type
 * Screenshot
 * Support for Windows
 * Testing on Linux
 * Unit tests
 * Optimize 'load class members'
 * Clean old class members on refresh
+
+Maybe later:
 * Support for multiple root folders
 * Support for symlinks
 * Fuzzy search
-* More intelligent determination of type (currently just a simple hack)
+* More intelligent determination of type (current implementation is just a simple hack)
