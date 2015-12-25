@@ -28,12 +28,12 @@ Tested on OS X. Probably works ok on some Linux distributions also. Does not sup
 
 TODO:
 * Organize imports automatically on save
-* Clean old class members on refresh
 * Screenshot
 * Unit tests
-* Testing on Linux
 * Support for Windows
+* Testing on Linux
 * Optimize 'load class members'
+* Clean old class members on refresh
 * Support for multiple root folders
 * Support for symlinks
 * Fuzzy search
