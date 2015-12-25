@@ -7,7 +7,7 @@ Autocomplete-plus provider for Java. Features:
 * Organize imports automatically on save (TODO)
 * Examine methods and variables of a class and use them as snippets
 * Intelligent sorting of suggestions
-* Refresh class descriptions automatically on save (if linter-javac enabled)
+* Refresh class description automatically on save
 * Refresh all class descriptions manually with the refresh command
 
 ![Screenshot](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
@@ -20,8 +20,7 @@ Configure classpath via a .classpath file that is placed at the root directory o
 
 You can also alter autocomplete behavior with the package settings.
 
-TIP: Use linter-javac package to compile your classes on save.
-
+NOTE: This package does not compile classes from source. Use linter-javac or some other package for that.
 
 ## Status
 
