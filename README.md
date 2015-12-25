@@ -2,12 +2,12 @@
 
 Autocomplete-plus provider for Java. Features:
 
-* Autocomplete class names
-* Auto import classes
-* Organize imports automatically on save (TODO)
+* Complete package and class names
+* Import classes
+* Organize imports (TODO)
 * Examine methods and variables of a class and use them as snippets
-* Intelligent sorting of suggestions
-* Refresh class description automatically on save
+* Intelligent suggestions (remembers previous selections)
+* Refresh class description automatically on save (after compile)
 * Refresh all class descriptions manually with the refresh command
 
 ![Screenshot](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
@@ -18,9 +18,9 @@ Configure classpath via a .classpath file that is placed at the root directory o
 
     ./src:./classes:./lib/*
 
-You can also alter autocomplete behavior with the package settings.
+You can also alter autocomplete behavior with settings.
 
-NOTE: This package does not compile classes from source. Use linter-javac or some other package for that.
+NOTE: There should be only one package that compiles classes, and other plugins should rely on that. Therefore this package does not compile classes from source. Use linter-javac or some other package/tool for compiling. Preferably all classes should be compiled on project load, and then each class separately on save.
 
 ## Status
 
@@ -34,5 +34,6 @@ TODO:
 * Testing on Linux
 * Support for Windows
 * Optimize 'load class members'
+* Support for multiple root folders
 * Fuzzy search
 * Determine variable type
