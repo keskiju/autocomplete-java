@@ -1,23 +1,23 @@
 {
-  "loadClassMembers": {
-    "title": "Load class members",
-    "description": "If enabled, you can examine class methods and other members e.g. 'ArrayList.contains'. Current implementation is unoptimized. Therefore the feature is recommended only for small projects at the moment.",
-    "type": "boolean",
-    "default": false,
-    "order": 0
-  },
   "inclusionPriority": {
     "title": "Inclusion priority",
     "description": "Inclusion priority in relation to other autocomplete-plus providers",
     "type": "integer",
     "default": 20,
-    "order": 1
+    "order": 0
   },
   "excludeLowerPriority": {
     "title": "Exclude lower priority providers",
     "description": "Whether to exclude lower priority providers",
     "type": "boolean",
     "default": true,
+    "order": 1
+  },
+  "loadClassMembers": {
+    "title": "Load class members",
+    "description": "If enabled, you can examine class methods and other members e.g. 'ArrayList.contains'.  If you have enabled the 'load class members' setting, I recommend you to put the most important paths in the classpath first, because class descriptions are loaded in the order specified in the .classpath file. This feature is recommended only for small projects at the moment because current implementation is still unoptimized.",
+    "type": "boolean",
+    "default": false,
     "order": 2
   }
 }
