@@ -11,7 +11,7 @@ Autocomplete-plus provider for Java. Features:
 * Refresh class description automatically on save (after compile)
 * Refresh all class descriptions manually with the refresh command
 
-NOTE: Still under development. Tested on OS X only. Might work on Linux. Does not support Windows yet!
+**NOTE: Still under development. Tested on OS X only. Might work on Linux. Does not support Windows yet!**
 
 ![Screenshot](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
 
