@@ -10,7 +10,7 @@
     "title": "Exclude lower priority providers",
     "description": "Whether to exclude lower priority providers",
     "type": "boolean",
-    "default": true,
+    "default": false,
     "order": 1
   },
   "loadClassMembers": {
