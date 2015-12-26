@@ -38,7 +38,7 @@ For v1.0.0:
 * Unit tests
 * Optimize 'load class members'
 * Clean old class members on refresh
-* Misc small fixes
+* Fine tuning and small fixes
 
 Maybe later:
 * Show inherited class members in suggestions
