@@ -11,6 +11,8 @@ Autocomplete-plus provider for Java. Features:
 * Refresh class description automatically on save (after compile)
 * Refresh all class descriptions manually with the refresh command
 
+NOTE: Still under development. Tested on OS X only. Might work on Linux. Does not support Windows yet!
+
 ![Screenshot](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
 
 ## Usage
@@ -25,11 +27,9 @@ Refresh doesn't trigger automatically in all cases. Try manual refresh if you ha
 
 NOTE: There should be only one package that compiles classes, and other plugins should rely on that. Therefore this package does not compile classes from source. Use linter-javac or some other package/tool for compiling. Preferably all classes should be compiled first on project load, and then each class separately on save.
 
-## Status
+## TODO
 
-Tested on OS X. Probably works ok on some Linux distributions also. Does not support Windows yet.
-
-TODO for v1.0.0:
+For v1.0.0:
 * Screenshot
 * Support for Windows
 * Testing on Linux
