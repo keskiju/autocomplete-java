@@ -19,7 +19,7 @@ Configure classpath via a .classpath file that is placed at the root directory o
 
     ./src:./classes:./lib/*
 
-You can also configure autocomplete behavior with package settings. Loading of class members is disabled by default, because implementation is still unoptimized.
+You can also alter autocomplete behavior with package settings. Loading of class members is disabled by default, because implementation is still unoptimized.
 
 Refresh doesn't trigger automatically in all cases. Try manual refresh if you have problems.
 
