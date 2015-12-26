@@ -34,10 +34,11 @@ TODO for v1.0.0:
 * Unit tests
 * Optimize 'load class members'
 * Clean old class members on refresh
+* Misc small fixes
 
 Maybe later:
+* Show method parameter names
+* More intelligent determination of type (current implementation is just a quick hack)
 * Support for multiple root folders
 * Support for symlinks
 * Fuzzy search
-* Show method parameter names
-* More intelligent determination of type (current implementation is just a simple hack)
