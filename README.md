@@ -38,6 +38,7 @@ TODO for v1.0.0:
 
 Maybe later:
 * Show method parameter names
+* Go to method declaration
 * More intelligent determination of type (current implementation is just a quick hack)
 * Support for multiple root folders
 * Support for symlinks
