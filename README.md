@@ -21,7 +21,7 @@ Configure classpath via a .classpath file that is placed at the root directory o
 
 You can also configure autocomplete behavior with package settings. Loading of class members is disabled by default, because it is still unoptimized.
 
-NOTE: Refresh doesn't seem to trigger automatically in all cases. Try manual refresh if you have problems: Packages -> Autocomplete Java -> Refresh.
+Refresh doesn't trigger automatically in all cases. Try manual refresh if you have problems.
 
 NOTE: There should be only one package that compiles classes, and other plugins should rely on that. Therefore this package does not compile classes from source. Use linter-javac or some other package/tool for compiling. Preferably all classes should be compiled first on project load, and then each class separately on save.
 
