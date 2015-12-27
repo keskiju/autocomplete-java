@@ -41,14 +41,19 @@ For v1.0.0:
 * Clean old class members on refresh
 * Fine tuning and small fixes
 
-Maybe later:
-* Compilation from source (on project load / on file save) as a separate package. Refresh after compilation.
+Maybe later (on issues list):
+* Compilation from source (on project load / on file save) as a separate package. Trigger refresh after compilation has ended.
 * Autocomplete constructors
-* Autocomplete get and set implementations
-* Show inherited class members
-* Show method parameter names
+* Autocomplete implementations of getter and setter methods
+* Autocomplete implementations of inherited methods
+* Show parameter names in method suggestions
+* Show inherited methods in method suggestions
 * Go to method declaration
 * Intelligent determination of type (current implementation is just a quick hack)
 * Support for multiple root folders
 * Support for symlinks
 * Fuzzy search
+
+## Contribute
+
+Contributions are welcome. Comment on issues you would like to contribute.
