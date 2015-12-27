@@ -13,9 +13,11 @@ Autocomplete-plus provider for Java. Features:
 
 Official page for package at atom.io: [autocomplete-java](https://atom.io/packages/autocomplete-java)
 
-**NOTE: Still under development. Tested on OS X only.**
+**NOTE: Still under development.**
 
-![Screenshot](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+## Preview
+
+![Screenshot](https://raw.github.com/keskiju/autocomplete-java/master/screenshot.gif)
 
 ## Usage
 
@@ -34,8 +36,6 @@ NOTE: This package does not compile classes from source because there should be 
 ## TODO
 
 For v1.0.0:
-* Screenshot
-* Testing on Linux and Windows
 * Unit tests
 * Optimize 'load class members'
 * Clean old class members on refresh
