@@ -56,4 +56,4 @@ Maybe later (on issues list):
 
 ## Contribute
 
-Contributions are welcome. Comment on issues you would like to contribute.
+Contributions are welcome. Comment on issues you would like to contribute to.
