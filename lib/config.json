@@ -26,5 +26,12 @@
     "type": "boolean",
     "default": false,
     "order": 3
+  },
+  "classpathFilePath": {
+    "title": "Classpath file path",
+    "description": "Path to classpath file",
+    "type": "string",
+    "default": ".classpath",
+    "order": 4
   }
 }

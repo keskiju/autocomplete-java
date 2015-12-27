@@ -13,7 +13,7 @@ Autocomplete-plus provider for Java. Features:
 
 Official page for package at atom.io: [autocomplete-java](https://atom.io/packages/autocomplete-java)
 
-**NOTE: Still under development. Tested on OS X only. Might work on Linux. Does not support Windows yet!**
+**NOTE: Still under development. Tested on OS X only.**
 
 ![Screenshot](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
 
@@ -25,26 +25,29 @@ Configure classpath via a .classpath file that is placed at the root directory o
 
 You can also alter autocomplete behavior with package settings. Loading of class members is disabled by default, because implementation is still unoptimized.
 
-Refresh doesn't trigger automatically in all cases. Try manual refresh if you have problems.
+Refresh doesn't trigger automatically in all cases. Try manual refresh if you encounter problems.
 
-NOTE: There should be only one package that compiles classes, and other plugins should rely on that. Therefore this package does not compile classes from source. Use [linter-javac](https://atom.io/packages/linter-javac) or some other package/tool for compiling. Preferably all classes should be compiled first on project load, and then each class separately on save.
+NOTE: Package requires that either JAVA_HOME environment variable is set or java commands are found on path.
+
+NOTE: This package does not compile classes from source because there should be only one package that compiles classes. Use [linter-javac](https://atom.io/packages/linter-javac) or some other package/tool for compiling. Preferably all classes should be compiled first on project load, and then each class separately on save.
 
 ## TODO
 
 For v1.0.0:
 * Screenshot
-* Support for Windows
-* Testing on Linux
+* Testing on Linux and Windows
 * Unit tests
 * Optimize 'load class members'
 * Clean old class members on refresh
 * Fine tuning and small fixes
 
 Maybe later:
-* Show inherited class members in suggestions
+* Autocomplete constructors
+* Autocomplete get and set implementations
+* Show inherited class members
 * Show method parameter names
 * Go to method declaration
-* More intelligent determination of type (current implementation is just a quick hack)
+* Intelligent determination of type (current implementation is just a quick hack)
 * Support for multiple root folders
 * Support for symlinks
 * Fuzzy search
