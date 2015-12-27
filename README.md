@@ -29,7 +29,7 @@ Refresh doesn't trigger automatically in all cases. Try manual refresh if you en
 
 NOTE: Package requires that either JAVA_HOME environment variable is set or java commands are found on path.
 
-NOTE: This package does not compile classes from source because there should be only one package that compiles classes. Use [linter-javac](https://atom.io/packages/linter-javac) or some other package/tool for compiling. Preferably all classes should be compiled first on project load, and then each class separately on save.
+NOTE: This package does not compile classes from source because there should be only one package that does that. Use [linter-javac](https://atom.io/packages/linter-javac) or some other package/tool for compiling. Preferably all classes should be compiled first on project load, and then each class separately on save.
 
 ## TODO
 
@@ -42,6 +42,7 @@ For v1.0.0:
 * Fine tuning and small fixes
 
 Maybe later:
+* Compilation from source (on project load / on file save) as a separate package. Refresh after compilation.
 * Autocomplete constructors
 * Autocomplete get and set implementations
 * Show inherited class members
