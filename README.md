@@ -23,13 +23,17 @@ Configure classpath via a .classpath file that is placed at the root directory o
 
     ./src:./classes:./lib/*
 
-You can also alter autocomplete behavior with package settings. Loading of class members is disabled by default, because implementation is still unoptimized.
+You can also alter autocomplete behavior with package settings. Loading of class members is disabled by default, because current implementation is still unoptimized.
 
-Refresh doesn't trigger automatically in all cases. Try manual refresh if you encounter problems.
+NOTE:
+* Package requires that either JAVA_HOME environment variable is set or java commands are found on path.
+* Refresh doesn't trigger automatically in all cases. Try manual refresh if you encounter problems.
+* This package requires compiled classes to function, but it does not compile classes from source. Use other tools for compiling.
 
-NOTE: Package requires that either JAVA_HOME environment variable is set or java commands are found on path.
-
-NOTE: This package does not compile classes from source because there should be only one package that does that. Use [linter-javac](https://atom.io/packages/linter-javac) or some other package/tool for compiling. Preferably all classes should be compiled first on project load, and then each class separately on save.
+Tips:
+* At first, compile all your classes using your favorite build tool
+* Lint and compile a changed class automatically on save using [linter-javac](https://atom.io/packages/linter-javac) (autocomplete-java refreshes class description automatically on save)
+* Reload a changed class automatically in JVM using [spring-loaded](https://github.com/spring-projects/spring-loaded)
 
 ## TODO
 
@@ -39,10 +43,9 @@ For v1.0.0:
 * Fine tuning and small fixes
 
 Later:
-* Compilation from source (on project load / on file save) as a separate package. Trigger refresh after compilation has ended.
 * Autocomplete constructors
-* Autocomplete implementations of getter and setter methods
-* Autocomplete implementations of inherited methods
+* Autocomplete boilerplate implementations of getter and setter methods
+* Autocomplete boilerplate implementations of inherited methods
 * Show parameter names in method suggestions
 * Show inherited methods in method suggestions
 * Go to method declaration
