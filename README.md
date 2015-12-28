@@ -38,10 +38,9 @@ NOTE: This package does not compile classes from source because there should be 
 For v1.0.0:
 * Unit tests
 * Optimize 'load class members'
-* Clean old class members on refresh
 * Fine tuning and small fixes
 
-Maybe later (on issues list):
+Later:
 * Compilation from source (on project load / on file save) as a separate package. Trigger refresh after compilation has ended.
 * Autocomplete constructors
 * Autocomplete implementations of getter and setter methods
@@ -53,6 +52,8 @@ Maybe later (on issues list):
 * Support for multiple root folders
 * Support for symlinks
 * Fuzzy search
+
+ Check all open issues at [GitHub](https://github.com/keskiju/autocomplete-java/issues))
 
 ## Contribute
 
