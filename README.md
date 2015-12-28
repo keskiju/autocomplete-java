@@ -13,8 +13,6 @@ Autocomplete-plus provider for Java. Features:
 
 Official page for package at atom.io: [autocomplete-java](https://atom.io/packages/autocomplete-java)
 
-**NOTE: Still under development.**
-
 ## Preview
 
 ![Screenshot](https://raw.github.com/keskiju/autocomplete-java/master/screenshot.gif)
