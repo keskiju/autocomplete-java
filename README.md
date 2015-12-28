@@ -31,9 +31,9 @@ NOTE:
 * This package requires compiled classes to function, but it does not compile classes from source. Use other tools for compiling.
 
 Tips:
-* At first, compile all your classes using your favorite build tool
-* Lint and compile a changed class automatically on save using [linter-javac](https://atom.io/packages/linter-javac) (autocomplete-java refreshes class description automatically on save)
-* Reload a changed class automatically in JVM using [spring-loaded](https://github.com/spring-projects/spring-loaded)
+* At first, compile all your classes using your favorite build tool and start your app.
+* Lint and compile a changed class automatically on save using [linter-javac](https://atom.io/packages/linter-javac). Autocomplete-java refreshes class description automatically on save.
+* Reload a changed class automatically in JVM using [spring-loaded](https://github.com/spring-projects/spring-loaded).
 
 ## TODO
 
