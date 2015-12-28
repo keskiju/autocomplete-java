@@ -23,9 +23,10 @@ Configure classpath via a .classpath file that is placed at the root directory o
 
     ./src:./classes:./lib/*
 
-You can also alter autocomplete behavior with package settings. Loading of class members is disabled by default, because current implementation is still unoptimized.
+You can also alter autocomplete behavior with package settings.  
 
 NOTE:
+* Loading of class members is disabled by default, because current implementation is still unoptimized. Enable it if you want to autocomplete method calls. But please be patient; autocomplete starts to work once classes have been analyzed and it will take a while, especially for JDK libraries which are loaded last. Class loading will be optimized later.
 * Package requires that either JAVA_HOME environment variable is set or java commands are found on path.
 * Refresh doesn't trigger automatically in all cases. Try manual refresh if you encounter problems.
 * This package requires compiled classes to function, but it does not compile classes from source. Use other tools for compiling.
