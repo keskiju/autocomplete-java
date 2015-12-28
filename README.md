@@ -55,4 +55,4 @@ Check all open issues at [GitHub](https://github.com/keskiju/autocomplete-java/i
 
 ## Contribute
 
-Contributions are welcome. Comment on issues you would like to contribute to.
+Contributions are welcome. Comment on [issues](https://github.com/keskiju/autocomplete-java/issues) you would like to contribute to, or add your own feature requests.
