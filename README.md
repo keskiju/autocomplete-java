@@ -53,7 +53,7 @@ Later:
 * Support for symlinks
 * Fuzzy search
 
-Check all open issues at [GitHub](https://github.com/keskiju/autocomplete-java/issues))
+Check all open issues at [GitHub](https://github.com/keskiju/autocomplete-java/issues)
 
 ## Contribute
 
