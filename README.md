@@ -54,6 +54,8 @@ Later:
 * Support for multiple root folders
 * Support for symlinks
 * Fuzzy search
+* Watch changed classes
+* Support for Java extlibs
 
 Check all open issues at [GitHub issues](https://github.com/keskiju/autocomplete-java/issues)
 
