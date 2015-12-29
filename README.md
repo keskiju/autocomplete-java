@@ -27,7 +27,7 @@ You can also alter autocomplete behavior with package settings.
 
 NOTE:
 * Autocomplete starts to work for method calls of a class once it has been analyzed. Current implementation is still unoptimized, however, so please be patient. Analyzing all classes will take a while, especially for JDK libraries which are loaded last. Class loading will be optimized later.
-* If package fails to determine type of variable or return value automatically, you can still examine members of a class using class name e.g. 'ArrayList.con...'. Type determination will be improved in the future.
+* If package fails to determine type of variable or return value automatically, you can still examine class members with a class name (e.g. 'ArrayList.con...') if you know the type yourself. Type determination will be improved in the future.
 * Package requires that either JAVA_HOME environment variable is set or java commands are found on path.
 * This package requires compiled classes to function, but it does not compile classes from source. Use other tools for compiling.
 
