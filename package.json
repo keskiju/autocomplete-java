@@ -15,7 +15,11 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "activationCommands": {
-    "atom-workspace": "autocomplete-java:refresh"
+    "atom-workspace": [
+      "autocomplete-java:organize-imports",
+      "autocomplete-java:refresh-project",
+      "autocomplete-java:full-refresh"
+    ]
   },
   "activationHooks": [
     "language-java:grammar-used"

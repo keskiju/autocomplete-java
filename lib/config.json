@@ -15,9 +15,9 @@
   },
   "loadClassMembers": {
     "title": "Load class members",
-    "description": "If enabled, you can examine class methods and other members e.g. 'ArrayList.contains'.  If you have enabled the 'load class members' setting, I recommend you to put the most important paths in the classpath first, because class descriptions are loaded in the order specified in the .classpath file. This feature is recommended only for small projects at the moment because current implementation is still unoptimized.",
+    "description": "If enabled, you can examine class methods and other members e.g. 'ArrayList.contains'.  If you have enabled the 'load class members' setting, I recommend you to put the most important paths in the classpath first, because class descriptions are loaded in the order specified in the .classpath file.",
     "type": "boolean",
-    "default": false,
+    "default": true,
     "order": 2
   },
   "organizeImportsOnSave": {
@@ -29,7 +29,7 @@
   },
   "classpathFilePath": {
     "title": "Classpath file path",
-    "description": "Path to classpath file",
+    "description": "If you bump into conflicts with other tools, e.g. Eclipse that uses .classpath in XML format, use this to rename the .classpath file to .classpath-atom or something else.",
     "type": "string",
     "default": ".classpath",
     "order": 4

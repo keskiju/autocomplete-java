@@ -26,15 +26,15 @@ Configure classpath via a .classpath file that is placed at the root directory o
 You can also alter autocomplete behavior with package settings.  
 
 NOTE:
-* Loading of class members is disabled by default, because current implementation is still unoptimized. Enable it if you need auto complete for method calls. But please be patient; autocomplete starts to work once classes have been analyzed and it will take a while, especially for JDK libraries which are loaded last. Class loading will be optimized later.
+* Autocomplete starts to work for method calls of a class once it has been analyzed. But current implementation is still unoptimized so please be patient. Analyzing all classes will take a while, especially for JDK libraries which are loaded last.
 * Package requires that either JAVA_HOME environment variable is set or java commands are found on path.
 * Refresh doesn't trigger automatically in all cases. Try manual refresh if you encounter problems.
 * This package requires compiled classes to function, but it does not compile classes from source. Use other tools for compiling.
 
 Tips:
-* At first, compile all your classes using your favorite build tool and start your app.
-* Lint and compile a changed class automatically on save using [linter-javac](https://atom.io/packages/linter-javac). Autocomplete-java refreshes class description automatically on save.
-* Reload a changed class automatically in JVM using [spring-loaded](https://github.com/spring-projects/spring-loaded).
+* At first, compile all your classes using your favorite build tool, and start your app.
+* Lint and compile changed classes automatically on save with [linter-javac](https://atom.io/packages/linter-javac). Autocomplete-java refreshes class description automatically on save.
+* Reload changed classes automatically in JVM with [spring-loaded](https://github.com/spring-projects/spring-loaded) or some other JVM agent.
 
 ## TODO
 
@@ -55,8 +55,8 @@ Later:
 * Support for symlinks
 * Fuzzy search
 
-Check all open issues at [GitHub](https://github.com/keskiju/autocomplete-java/issues)
+Check all open issues at [GitHub issues](https://github.com/keskiju/autocomplete-java/issues)
 
 ## Contribute
 
-Contributions are welcome. Comment on [issues](https://github.com/keskiju/autocomplete-java/issues) you would like to contribute to, or add your own feature requests.
+Contributions are welcome. Please comment on [issues](https://github.com/keskiju/autocomplete-java/issues) you would like to contribute to, or add feature requests of your own.

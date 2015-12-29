@@ -1,2 +1,3 @@
 'atom-workspace':
-  'ctrl-alt-shift-r': 'autocomplete-java:refresh'
+  'ctrl-alt-shift-o': 'autocomplete-java:organize-imports'
+  'ctrl-alt-shift-r': 'autocomplete-java:refresh-project'
