@@ -26,21 +26,21 @@ Configure classpath via a .classpath file that is placed at the root directory o
 You can also alter autocomplete behavior with package settings.  
 
 NOTE:
-* Autocomplete starts to work for method calls of a class once it has been analyzed. Current implementation is still unoptimized, however, so please be patient. Analyzing all classes will take a while, especially for JDK libraries which are loaded last. Class loading will be optimized later.
-* If package fails to determine type of variable or return value automatically, you can still examine class members with a class name (e.g. 'ArrayList.con...') if you know the type yourself. Type determination will be improved in the future.
-* Package requires that either JAVA_HOME environment variable is set or java commands are found on path.
-* This package requires compiled classes to function, but it does not compile classes from source. Use other tools for compiling.
+* The package requires that either JAVA_HOME environment variable is set or java commands are found on path.
+* The package requires compiled classes to function, but it does not compile classes from source. Use other tools for compiling.
+* If the package fails to determine type of instance automatically, you can still examine class members with a class name if you know the type yourself (e.g. ArrayList.con...). Type determination will be improved in the future.
 
-Tips:
-* At first, compile all your classes using your favorite build tool, and start your app.
-* Lint and compile changed classes automatically on save with [linter-javac](https://atom.io/packages/linter-javac). Autocomplete-java refreshes class description automatically on save. NOTE: linter-javac compiles classes only if none of them contain any errors. Therefore you have to run 'project refresh' (shift-ctrl-alt+R) manually after you fix an error, if it causes compilation of multiple changed classes at once.
-* Reload changed classes automatically in JVM with [spring-loaded](https://github.com/spring-projects/spring-loaded) or some other JVM agent.
+Tip:
+1. At first, compile all your classes using your favorite build tool, and start your app.
+2. Lint and compile classes automatically on save with [linter-javac](https://atom.io/packages/linter-javac). Also autocomplete-java refreshes a class automatically on save.
+3. Reload changed classes automatically in JVM with [spring-loaded](https://github.com/spring-projects/spring-loaded) or some other JVM agent.
+
+NOTE: Error in one class may prevent compilation of multiple classes. Therefore once you fix an error, multiple classes might be recompiled at once. So sometimes you might have to run 'project refresh' (shift-ctrl-alt+R) manually after you fix an error.
 
 ## TODO
 
 For v1.0.0:
 * Unit tests
-* Optimize 'load class members'
 * Fine tuning and small fixes
 
 Later:
@@ -51,11 +51,11 @@ Later:
 * Show inherited methods in method suggestions
 * Go to method declaration
 * Intelligent determination of type (current implementation is just a quick hack)
-* Support for multiple root folders
-* Support for symlinks
 * Fuzzy search
 * Watch changed classes
 * Support for Java extlibs
+* Support for multiple root folders
+* Support for symlinks
 
 Check all open issues at [GitHub issues](https://github.com/keskiju/autocomplete-java/issues)
 

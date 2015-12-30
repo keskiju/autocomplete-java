@@ -15,7 +15,7 @@
   },
   "loadClassMembers": {
     "title": "Load class members",
-    "description": "If enabled, you can examine class methods and other members e.g. 'ArrayList.contains'.  If you have enabled the 'load class members' setting, I recommend you to put the most important paths in the classpath first, because class descriptions are loaded in the order specified in the .classpath file.",
+    "description": "If enabled, you can examine methods and other members of a class e.g. 'ArrayList.con...'.  NOTE: On a large project it might take a while to scan all classes on your classpath.",
     "type": "boolean",
     "default": true,
     "order": 2
