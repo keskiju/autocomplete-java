@@ -30,7 +30,9 @@ NOTE:
 * The package requires compiled classes to function, but it does not compile classes from source. Use other tools for compiling.
 * If the package fails to determine type of instance automatically, you can still examine class members with a class name if you know the type yourself (e.g. ArrayList.con...). Type determination will be improved in the future.
 
-TIP: At first, compile all your classes using your favorite build tool, and start your app. While editing java source files, lint and compile classes automatically with [linter-javac](https://atom.io/packages/linter-javac), and the autocomplete-java package will refresh changed classes automatically on save. You can also reload changed classes automatically in JVM with [spring-loaded](https://github.com/spring-projects/spring-loaded) or some other JVM agent. This way you can develop your app while the app is running.
+## Tips
+
+At first, compile all your classes using your favorite build tool, and start your app. While editing java source files, lint and compile classes automatically with [linter-javac](https://atom.io/packages/linter-javac), and the autocomplete-java package will refresh changed classes automatically on save. You can also reload changed classes automatically in JVM with [spring-loaded](https://github.com/spring-projects/spring-loaded) or some other JVM agent. This way you can develop your app while the app is running.
 
 NOTE: Linter-javac performs currently ok only on small projects ([linter-javac#38](https://github.com/AtomLinter/linter-javac/issues/38), [linter-javac#44](https://github.com/AtomLinter/linter-javac/issues/44)). On a larger project you might want to use some other tool to compile your files on save instead of linter-javac, at least for now.
 
