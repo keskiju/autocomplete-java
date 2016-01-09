@@ -20,18 +20,25 @@
     "default": true,
     "order": 2
   },
+  "refreshClassOnSave": {
+    "title": "Refresh class on save",
+    "description": "",
+    "type": "boolean",
+    "default": true,
+    "order": 3
+  },
   "organizeImportsOnSave": {
     "title": "Organize imports on save",
     "description": "",
     "type": "boolean",
     "default": false,
-    "order": 3
+    "order": 4
   },
   "classpathFilePath": {
     "title": "Classpath file path",
     "description": "If you bump into conflicts with other tools, e.g. Eclipse that uses .classpath in XML format, use this to rename the .classpath file to .classpath-atom or something else.",
     "type": "string",
     "default": ".classpath",
-    "order": 4
+    "order": 5
   }
 }

@@ -28,6 +28,7 @@ You can also alter autocomplete behavior with package settings.
 NOTE:
 * The package requires that either JAVA_HOME environment variable is set or java commands are found on path.
 * The package requires compiled classes to function, but it does not compile classes from source. Use other tools for compiling.
+* If you compile classes manually, disable the 'refresh class on save' setting and run 'project refresh' (ctrl-alt-shift-R) manually after compilation. Also try to avoid running refresh and build scripts at the same time.
 * If the package fails to determine type of instance automatically, you can still examine class members with a class name if you know the type yourself (e.g. ArrayList.con...). Type determination will be improved in the future.
 
 ## Tips
