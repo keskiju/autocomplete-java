@@ -1,15 +1,27 @@
 # autocomplete-java
 
-Autocomplete-plus provider for Java. Features:
+Autocomplete-plus provider for Java. Current features:
 
 * Complete package and class names
 * Import classes
 * Organize imports
 * Examine public methods and properties of a class or instance and use them as snippets
-* Crude determination of type
-* Intelligent suggestions (remembers previous selections)
-* Refresh class description automatically on save (after compile)
-* Refresh all class descriptions manually with the refresh command
+* Crude determination of instance type (still a quick hack)
+* Predictive suggestions (remembers previous selections)
+
+TODO list for v1.0.0:
+
+* Unit tests
+* [Autocomplete constructors](https://github.com/keskiju/autocomplete-java/issues/2)
+* [Show inherited methods in method suggestions](https://github.com/keskiju/autocomplete-java/issues/6)
+* Fine tuning and small fixes
+
+Some planned future features:
+
+* [Autocomplete implementations of getter and setter methods](https://github.com/keskiju/autocomplete-java/issues/3)
+* [Autocomplete implementations of overriding methods](https://github.com/keskiju/autocomplete-java/issues/4)
+* [Intelligent determination of instance type](https://github.com/keskiju/autocomplete-java/issues/8)
+* ... See all open issues at [GitHub issues](https://github.com/keskiju/autocomplete-java/issues)
 
 Official page for package at atom.io: [autocomplete-java](https://atom.io/packages/autocomplete-java)
 
@@ -26,10 +38,10 @@ Configure classpath via a .classpath file that is placed at the root directory o
 You can also alter autocomplete behavior with package settings.  
 
 NOTE:
-* The package requires that either JAVA_HOME environment variable is set or java commands are found on path.
+* The package requires that either JAVA_HOME environment variable is set or JDK tools (javap, jar) are found in path.
 * The package requires compiled classes to function, but it does not compile classes from source. Use other tools for compiling.
-* If you compile classes manually, disable the 'refresh class on save' setting and run 'project refresh' (ctrl-alt-shift-R) manually after compilation. Also try to avoid running refresh and build scripts at the same time.
-* If the package fails to determine type of instance automatically, you can still examine class members with a class name if you know the type yourself (e.g. ArrayList.con...). Type determination is still a quick hack and it will be improved in the future. See issue [#8](https://github.com/keskiju/autocomplete-java/issues/8).
+* If you compile classes manually, disable the 'refresh class on save' setting and run 'project refresh' manually after compilation (ctrl-alt-shift-R). Also try to avoid running refresh command and build scripts at the same time.
+* **Type determination is still a quick hack and it will be improved in the future. If the package fails to determine type of instance automatically, you can still examine methods with a class name if you know the type yourself (e.g. ArrayList.con...). Note also that scanning all classes in classpath (full refresh) might take a few minutes.**
 
 ## Tips
 
@@ -38,17 +50,6 @@ At first, compile all your classes using your favorite build tool, and start you
 NOTE: Linter-javac performs currently ok only on small projects ([linter-javac#38](https://github.com/AtomLinter/linter-javac/issues/38), [linter-javac#44](https://github.com/AtomLinter/linter-javac/issues/44)). On a larger project you might want to use some other tool to compile your files on save instead of linter-javac, at least for now.
 
 NOTE: Error in one class may prevent compilation of multiple classes. Therefore once you fix an error, multiple classes might be recompiled at once. So sometimes you might have to run 'project refresh' manually after you fix an error (ctrl-alt-shift-R). See issue [#19](https://github.com/keskiju/autocomplete-java/issues/19).
-
-## TODO
-
-For v1.0.0:
-* Unit tests
-* [Autocomplete constructors](https://github.com/keskiju/autocomplete-java/issues/2)
-* [Show inherited methods in method suggestions](https://github.com/keskiju/autocomplete-java/issues/6)
-* Fine tuning and small fixes
-
-Later:
-* See all open issues at [GitHub issues](https://github.com/keskiju/autocomplete-java/issues)
 
 ## Contribute
 
