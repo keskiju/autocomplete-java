@@ -6,21 +6,22 @@ Autocomplete-plus provider for Java. Current features:
 * Import classes
 * Organize imports
 * Examine public methods and properties of a class or instance and use them as snippets
-* Crude determination of instance type (still a quick hack)
+* Crude determination of instance class (still a quick hack)
 * Predictive suggestions (remembers previous selections)
 
-TODO list for v1.0.0:
+TODO for v1.0.0:
 
 * Unit tests
 * [Autocomplete constructors](https://github.com/keskiju/autocomplete-java/issues/2)
 * [Show inherited methods in method suggestions](https://github.com/keskiju/autocomplete-java/issues/6)
+* [Support for multiple project folders](https://github.com/keskiju/autocomplete-java/issues/9)
 * Fine tuning and small fixes
 
 Some planned future features:
 
 * [Autocomplete implementations of getter and setter methods](https://github.com/keskiju/autocomplete-java/issues/3)
 * [Autocomplete implementations of overriding methods](https://github.com/keskiju/autocomplete-java/issues/4)
-* [Intelligent determination of instance type](https://github.com/keskiju/autocomplete-java/issues/8)
+* [Intelligent determination of instance class](https://github.com/keskiju/autocomplete-java/issues/8)
 * ... See all open issues at [GitHub issues](https://github.com/keskiju/autocomplete-java/issues)
 
 Official page for package at atom.io: [autocomplete-java](https://atom.io/packages/autocomplete-java)
@@ -38,10 +39,10 @@ Configure classpath via a .classpath file that is placed at the root directory o
 You can also alter autocomplete behavior with package settings.  
 
 NOTE:
-* The package requires that either JAVA_HOME environment variable is set or JDK tools (javap, jar) are found in path.
+* The package requires that either JAVA_HOME environment variable is set or JDK tools (javap, jar) are found in path. Alternatively you can set JAVA_HOME in package settings.
 * The package requires compiled classes to function, but it does not compile classes from source. Use other tools for compiling.
-* If you compile classes manually, disable the 'refresh class on save' setting and run 'project refresh' manually after compilation (ctrl-alt-shift-R). Also try to avoid running refresh command and build scripts at the same time.
-* **Type determination is still a quick hack and it will be improved in the future. If the package fails to determine type of instance automatically, you can still examine methods with a class name if you know the type yourself (e.g. ArrayList.con...). Note also that scanning all classes in classpath (full refresh) might take a few minutes.**
+* If you compile classes manually, disable the 'refresh class on save' setting and run 'refresh project' manually after compilation (ctrl-alt-shift-R). Also try to avoid running refresh command and build scripts at the same time.
+* **Type determination is still a quick hack and it will be improved in the future. If the package fails to determine instance class automatically, you can still examine methods with a class name if you know the class yourself (e.g. ArrayList.con...). Note also that scanning all classes in classpath (full refresh) might take a few minutes.**
 
 ## Tips
 
