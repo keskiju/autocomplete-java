@@ -27,25 +27,18 @@
     "default": true,
     "order": 3
   },
-  "organizeImportsOnSave": {
-    "title": "Organize imports on save",
-    "description": "",
-    "type": "boolean",
-    "default": false,
-    "order": 4
-  },
   "classpathFilePath": {
     "title": "Classpath file path",
     "description": "If you bump into conflicts with other tools, e.g. Eclipse that uses .classpath in XML format, use this to rename the .classpath file to .classpath-atom or something else.",
     "type": "string",
     "default": ".classpath",
-    "order": 5
+    "order": 4
   },
   "javaHome": {
     "title": "JAVA_HOME",
     "description": "By default autocomplete-java uses JAVA_HOME and PATH enviroment variables to find JDK tools, but you can override your JAVA_HOME environment setting here, e.g. /usr/lib/jvm/java-7-openjdk-amd64",
     "type": "string",
     "default": "",
-    "order": 6
+    "order": 5
   }
 }
