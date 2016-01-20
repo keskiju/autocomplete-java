@@ -45,7 +45,7 @@ NOTE:
 * The package requires compiled classes to function, but it does not compile classes from source. Use other tools for compiling.
 * If you compile classes manually, disable the 'refresh class on save' setting and run 'refresh project' manually after compilation (ctrl-alt-shift-R). Also try to avoid running refresh command and your build scripts at the same time.
 * **Scanning all classes in classpath is still unoptimized. It might take a few minutes until autocomplete fully kicks in after opening a project, so please be patient.**
-* **Instance class resolution is still a quick hack and it will be improved in the future. If the package fails to resolve instance class automatically, you can still examine methods with a class name if you know the class yourself (e.g. ArrayList.con...).**
+* **Class resolution for variables and method return values is still a quick hack and it will be improved in the future. If the package fails to resolve class automatically, you can still examine methods with a class name if you know the class yourself (e.g. ArrayList.con...).**
 
 ## Tips
 
