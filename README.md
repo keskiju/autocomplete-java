@@ -1,15 +1,15 @@
 # autocomplete-java
 
-Java autocomplete-plus provider for Atom editor. Current features:
+Java autocomplete-plus provider for Atom editor. Still under development. Current features:
 
 * Complete package and class names
-* Import classes
-* Organize imports
+* Import classes automatically
+* Organize imports alphabetically
 * Examine public methods and properties of a class or instance and use them as snippets
 * Crude class resolution for variables and method return values (still a quick hack)
 * Predictive suggestions
 
-Still under development. TODO for v1.0.0:
+TODO for v1.0.0:
 
 * Unit tests
 * [Show inherited methods among method suggestions](https://github.com/keskiju/autocomplete-java/issues/6)
@@ -22,6 +22,7 @@ Some planned future features:
 * [Watch changed classes](https://github.com/keskiju/autocomplete-java/issues/19)
 * [Optimize class loading](https://github.com/keskiju/autocomplete-java/issues/13)
 * [Improved class resolution](https://github.com/keskiju/autocomplete-java/issues/8)
+* [Grouping imports by sun/google conventions](https://github.com/keskiju/autocomplete-java/issues/27)
 * [Autocomplete implementations of getter and setter methods](https://github.com/keskiju/autocomplete-java/issues/3)
 * [Autocomplete implementations of overriding methods](https://github.com/keskiju/autocomplete-java/issues/4)
 * ... See all open issues at [GitHub issues](https://github.com/keskiju/autocomplete-java/issues)
