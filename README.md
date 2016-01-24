@@ -14,7 +14,7 @@ TODO for v1.0.0:
 * Unit tests
 * [Show inherited methods among method suggestions](https://github.com/keskiju/autocomplete-java/issues/6)
 * [Autocomplete constructors](https://github.com/keskiju/autocomplete-java/issues/2)
-* [Support for multiple project folders](https://github.com/keskiju/autocomplete-java/issues/9)
+* [Support for subproject folders (multiple classpaths)](https://github.com/keskiju/autocomplete-java/issues/9)
 * Fine tuning and small fixes
 
 Some planned future features:
