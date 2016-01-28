@@ -35,14 +35,14 @@ Official page for package at atom.io: [autocomplete-java](https://atom.io/packag
 
 ## Usage
 
-Configure classpath via a .classpath file that is placed at the root directory of your project. For example:
+Configure [classpath](https://en.wikipedia.org/wiki/Classpath_%28Java%29) via a .classpath file that is placed at the root directory of your project. For example:
 
     ./src:./classes:./lib/*
 
 You can also alter autocomplete behavior with package settings.  
 
 NOTE:
-* The package requires that either JAVA_HOME environment variable is set or JDK tools (javap, jar) are found in path. Alternatively you can set JAVA_HOME in package settings.
+* The package requires that either [JAVA_HOME](http://javarevisited.blogspot.fi/2012/02/how-to-set-javahome-environment-in.html) environment variable is set or JDK tools (javap, jar) are found in path. Alternatively you can set JAVA_HOME in package settings.
 * The package requires compiled classes to function, but it does not compile classes from source. Use other tools for compiling.
 * If you compile classes manually, disable the 'refresh class on save' setting and run 'refresh project' manually after compilation (ctrl-alt-shift-R). Also try to avoid running refresh command and your build scripts at the same time.
 * **Scanning all classes in classpath is still unoptimized. It might take a few minutes until autocomplete fully kicks in after opening a project, so please be patient.**
