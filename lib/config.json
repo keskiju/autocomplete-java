@@ -28,7 +28,7 @@
     "order": 3
   },
   "classpathFilePath": {
-    "title": "Classpath file path",
+    "title": "Classpath file name",
     "description": "If you bump into conflicts with other tools, e.g. Eclipse that uses .classpath in XML format, use this to rename the .classpath file to .classpath-atom or something else.",
     "type": "string",
     "default": ".classpath",

@@ -14,7 +14,6 @@ TODO for v1.0.0:
 * Unit tests
 * [Show inherited methods among method suggestions](https://github.com/keskiju/autocomplete-java/issues/6)
 * [Autocomplete constructors](https://github.com/keskiju/autocomplete-java/issues/2)
-* [Support for subproject folders (multiple classpaths)](https://github.com/keskiju/autocomplete-java/issues/9)
 * Fine tuning and small fixes
 
 Some planned future features:
@@ -35,11 +34,13 @@ Official page for package at atom.io: [autocomplete-java](https://atom.io/packag
 
 ## Usage
 
-Configure [classpath](https://en.wikipedia.org/wiki/Classpath_%28Java%29) via a .classpath file that is placed at the root directory of your project. For example:
+Configure [classpath](https://en.wikipedia.org/wiki/Classpath_%28Java%29) via a .classpath file. For example:
 
-    ./src:./classes:./lib/*
+    ./classes:./lib/*
 
-You can also alter autocomplete behavior with package settings.  
+A simple project would typically contain a single .classpath file that is placed at the root directory of the project. A large project would contain a separate .classpath file for each module.
+
+You can alter default autocomplete behavior with package settings.
 
 NOTE:
 * The package requires that either [JAVA_HOME](http://javarevisited.blogspot.fi/2012/02/how-to-set-javahome-environment-in.html) environment variable is set or JDK tools (javap, jar) are found in path. Alternatively you can set JAVA_HOME in package settings.
@@ -50,7 +51,7 @@ NOTE:
 
 ## Tips
 
-At first, compile all your classes using your favorite build tool, and start your app. While editing java source files, lint and compile classes automatically with [linter-javac](https://atom.io/packages/linter-javac), and the autocomplete-java package will refresh changed classes automatically on save. You can also reload changed classes automatically in JVM with [spring-loaded](https://github.com/spring-projects/spring-loaded) or some other JVM agent. This way you can develop your app while the app is running.
+At first, compile all your classes using your favorite build tool, and start your app. While editing java source files, lint and compile changed classes automatically with [linter-javac](https://atom.io/packages/linter-javac) using the -d switch, and the autocomplete-java package will refresh changed classes automatically on save. You can also reload changed classes automatically in JVM with [spring-loaded](https://github.com/spring-projects/spring-loaded) or some other JVM agent. This way you can develop your app while the app is running.
 
 NOTE: Linter-javac performs currently ok only on small projects ([linter-javac#38](https://github.com/AtomLinter/linter-javac/issues/38), [linter-javac#44](https://github.com/AtomLinter/linter-javac/issues/44)). On a larger project you might want to use some other tool to compile your files on save instead of linter-javac, at least for now.
 
