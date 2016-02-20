@@ -14,7 +14,6 @@ TODO for v1.0.0:
 * Unit tests
 * [Show inherited methods among method suggestions](https://github.com/keskiju/autocomplete-java/issues/6)
 * [Autocomplete constructors](https://github.com/keskiju/autocomplete-java/issues/2)
-* Fine tuning and small fixes
 
 Some planned future features:
 
