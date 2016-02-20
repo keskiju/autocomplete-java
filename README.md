@@ -1,4 +1,4 @@
-# autocomplete-java
+# autocomplete-java ![Number of downloads](https://img.shields.io/apm/dm/autocomplete-java.svg?style=flat-square)
 
 Java autocomplete-plus provider for Atom editor. Still under development. Current features:
 
@@ -14,7 +14,6 @@ TODO for v1.0.0:
 
 * Unit tests
 * [Show inherited methods among method suggestions](https://github.com/keskiju/autocomplete-java/issues/6)
-* [Autocomplete constructors](https://github.com/keskiju/autocomplete-java/issues/2)
 
 Some planned future features:
 
@@ -34,11 +33,9 @@ Official page for package at atom.io: [autocomplete-java](https://atom.io/packag
 
 ## Usage
 
-Configure [classpath](https://en.wikipedia.org/wiki/Classpath_%28Java%29) via a .classpath file. For example:
+Configure [classpath](https://en.wikipedia.org/wiki/Classpath_%28Java%29) via a .classpath file. A simple project would typically contain a single .classpath file that is placed at the root directory of the project. A large project would contain a separate .classpath file for each module. An example of .classpath file contents:
 
-    ./classes:./lib/*
-
-A simple project would typically contain a single .classpath file that is placed at the root directory of the project. A large project would contain a separate .classpath file for each module.
+    ./classes:./lib/*:../api/classes
 
 You can alter default autocomplete behavior with package settings.
 
