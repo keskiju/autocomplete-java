@@ -10,11 +10,6 @@ Java autocomplete-plus provider for Atom editor. Current features:
 * Crude class resolution for variables and method return values (still a quick hack)
 * Predictive suggestions
 
-TODO for v1.0.0:
-
-* Unit tests
-* [Show inherited methods among method suggestions](https://github.com/keskiju/autocomplete-java/issues/6)
-
 Some planned future features:
 
 * [Watch changed classes](https://github.com/keskiju/autocomplete-java/issues/19)
