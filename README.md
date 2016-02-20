@@ -1,12 +1,12 @@
 # autocomplete-java ![Number of downloads](https://img.shields.io/apm/dm/autocomplete-java.svg?style=flat-square)
 
-Java autocomplete-plus provider for Atom editor. Still under development. Current features:
+Java autocomplete-plus provider for Atom editor. Current features:
 
 * Complete package and class names
 * Import classes automatically
 * Organize imports alphabetically
 * Fold imports
-* Examine public methods and properties of a class or instance and use them as snippets
+* Examine constructors, methods and properties of a class or instance and use them as snippets
 * Crude class resolution for variables and method return values (still a quick hack)
 * Predictive suggestions
 
