@@ -14,6 +14,7 @@ Some planned future features:
 
 * [Improved class resolution](https://github.com/keskiju/autocomplete-java/issues/8)
 * [Include parameter names in method suggestions](https://github.com/keskiju/autocomplete-java/issues/5)
+* [Unit tests, refactoring, make package extensible](https://github.com/keskiju/autocomplete-java/issues/14)
 * [Optimize class loading](https://github.com/keskiju/autocomplete-java/issues/13)
 * [Watch changed classes](https://github.com/keskiju/autocomplete-java/issues/19)
 * [Autocomplete implementations of getter and setter methods](https://github.com/keskiju/autocomplete-java/issues/3)
