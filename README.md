@@ -32,7 +32,9 @@ Configure [classpath](https://en.wikipedia.org/wiki/Classpath_%28Java%29) via a 
 
     ./classes:./lib/*:../api/classes
 
-You can alter default autocomplete behavior with package settings.
+You can alter the default .classpath filename and other autocomplete behavior with package settings.
+
+There is an example of multimodule classpath setup on [linter-javac Wiki](https://github.com/AtomLinter/linter-javac/wiki/classpathFilename#multiple-classpaths).
 
 NOTE:
 * The package requires that either [JAVA_HOME](http://javarevisited.blogspot.fi/2012/02/how-to-set-javahome-environment-in.html) environment variable is set or JDK tools (javap, jar) are found in path. Alternatively you can set JAVA_HOME in package settings.
@@ -43,9 +45,7 @@ NOTE:
 
 ## Tips
 
-At first, compile all your classes using your favorite build tool, and start your app. While editing java source files, lint and compile changed classes automatically with [linter-javac](https://atom.io/packages/linter-javac) using the -d switch, and the autocomplete-java package will refresh changed classes automatically on save. You can also reload changed classes automatically in JVM with [spring-loaded](https://github.com/spring-projects/spring-loaded) or some other JVM agent. This way you can develop your app while the app is running.
-
-NOTE: Linter-javac performs currently ok only on small projects ([linter-javac#38](https://github.com/AtomLinter/linter-javac/issues/38), [linter-javac#44](https://github.com/AtomLinter/linter-javac/issues/44)). On a larger project you might want to use some other tool to compile your files on save instead of linter-javac, at least for now.
+At first, compile all your classes using your favorite build tool, and start your app. While editing java source files, lint and compile changed classes automatically with [linter-javac](https://atom.io/packages/linter-javac), and the autocomplete-java package will refresh changed classes automatically on save. You can also reload changed classes automatically in JVM with [spring-loaded](https://github.com/spring-projects/spring-loaded) or some other JVM agent. This way you can develop your app while the app is running.
 
 NOTE: Error in one class may prevent compilation of multiple classes. Therefore once you fix an error, multiple classes might be recompiled at once. So sometimes you might have to run 'project refresh' manually after you fix an error (ctrl-alt-shift-R). See issue [#19](https://github.com/keskiju/autocomplete-java/issues/19).
 
