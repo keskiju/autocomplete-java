@@ -50,6 +50,8 @@ NOTE:
 
 At first, compile all your classes using your favorite build tool, and start your app. While editing java source files, lint and compile changed classes automatically with [linter-javac](https://atom.io/packages/linter-javac), and the autocomplete-java package will refresh changed classes automatically on save. You can also reload changed classes automatically in JVM with [spring-loaded](https://github.com/spring-projects/spring-loaded) or some other JVM agent. This way you can develop your app while the app is running.
 
+NOTE: Current version of linter-javac performs bad in case of slow hard drive and large amount of classes to be linted. If you experience freezing during file save, consider disabling linter-javac, at least for now.
+
 NOTE: Error in one class may prevent compilation of multiple classes. Therefore once you fix an error, multiple classes might be recompiled at once. So sometimes you might have to run 'project refresh' manually after you fix an error (ctrl-alt-shift-R). See issue [#19](https://github.com/keskiju/autocomplete-java/issues/19).
 
 ## Contribute
