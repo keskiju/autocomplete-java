@@ -39,6 +39,7 @@ There is an example of multimodule classpath setup on [linter-javac Wiki](https:
 NOTE:
 * The package requires that either [JAVA_HOME](http://javarevisited.blogspot.fi/2012/02/how-to-set-javahome-environment-in.html) environment variable is set or JDK tools (javap, jar) are found in path. Alternatively you can set JAVA_HOME in package settings.
 * The package requires compiled classes to function, but it does not compile classes from source. Use other tools for compiling.
+* If you want autocomplete to show method argument names, compile your classes with the -parameters switch of Javac.
 * If you compile classes manually, disable the 'refresh class on save' setting and run 'refresh project' manually after compilation (ctrl-alt-shift-R). Also try to avoid running refresh command and your build scripts at the same time.
 * **Scanning all classes in classpath is still unoptimized. It might take a few minutes until autocomplete fully kicks in after opening a project, so please be patient.**
 * **Class resolution for variables and method return values is still a quick hack and it will be improved in the future. If the package fails to resolve class automatically, you can still examine methods with a class name if you know the class yourself (e.g. ArrayList.con...).**
