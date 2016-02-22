@@ -12,12 +12,13 @@ Java autocomplete-plus provider for Atom editor. Current features:
 
 Some planned future features:
 
-* [Watch changed classes](https://github.com/keskiju/autocomplete-java/issues/19)
-* [Optimize class loading](https://github.com/keskiju/autocomplete-java/issues/13)
 * [Improved class resolution](https://github.com/keskiju/autocomplete-java/issues/8)
-* [Grouping imports by sun/google conventions](https://github.com/keskiju/autocomplete-java/issues/27)
+* [Include parameter names in method suggestions](https://github.com/keskiju/autocomplete-java/issues/5)
+* [Optimize class loading](https://github.com/keskiju/autocomplete-java/issues/13)
+* [Watch changed classes](https://github.com/keskiju/autocomplete-java/issues/19)
 * [Autocomplete implementations of getter and setter methods](https://github.com/keskiju/autocomplete-java/issues/3)
 * [Autocomplete implementations of overriding methods](https://github.com/keskiju/autocomplete-java/issues/4)
+* [Grouping imports by sun/google conventions](https://github.com/keskiju/autocomplete-java/issues/27)
 * ... See all open issues at [GitHub issues](https://github.com/keskiju/autocomplete-java/issues)
 
 Official page for package at atom.io: [autocomplete-java](https://atom.io/packages/autocomplete-java)
@@ -32,9 +33,9 @@ Configure [classpath](https://en.wikipedia.org/wiki/Classpath_%28Java%29) via a 
 
     ./classes:./lib/*:../api/classes
 
-You can alter the default .classpath filename and other autocomplete behavior with package settings.
-
 There is an example of multimodule classpath setup on [linter-javac Wiki](https://github.com/AtomLinter/linter-javac/wiki/classpathFilename#multiple-classpaths).
+
+You can alter the default .classpath filename and other autocomplete behavior with package settings.
 
 NOTE:
 * The package requires that either [JAVA_HOME](http://javarevisited.blogspot.fi/2012/02/how-to-set-javahome-environment-in.html) environment variable is set or JDK tools (javap, jar) are found in path. Alternatively you can set JAVA_HOME in package settings.
