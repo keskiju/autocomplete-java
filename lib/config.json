@@ -40,5 +40,12 @@
     "type": "string",
     "default": "",
     "order": 5
+  },
+  "foldImports": {
+    "title": "Fold imports",
+    "description": "",
+    "type": "boolean",
+    "default": true,
+    "order": 6
   }
 }
