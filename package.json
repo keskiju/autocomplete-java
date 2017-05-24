@@ -1,7 +1,7 @@
 {
   "name": "autocomplete-java",
   "main": "./lib/atomAutocompletePackage",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "Autocomplete-plus provider for Java",
   "repository": "https://github.com/keskiju/autocomplete-java",
   "license": "MIT",
